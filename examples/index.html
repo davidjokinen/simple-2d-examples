@@ -1,0 +1,17 @@
+<div id="example">
+</div>
+<h2>Examples</h2>
+<a href="#basic" onclick="reload()">Basic</a>
+<a href="#basic2" onclick="reload()">Basic2</a>
+<script>
+  const hash = document.location.hash.substring(1);
+  const script = document.createElement('script');
+  script.src = `./dist/${hash}.min.js`;
+  document.head.appendChild(script)
+
+  function reload() {
+    setTimeout(() => {
+      window.location.reload();
+    }, 10);
+  }
+</script>
