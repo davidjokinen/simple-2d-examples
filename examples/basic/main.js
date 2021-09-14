@@ -35,13 +35,13 @@ window.addEventListener('resize', () => {
 }, false);
 resizeCanvas();
 
-const roguelikeCharTexture = new simple2d.textures.ImageTexture(roguelikeChar);
+const roguelikeCharTexture = new simple2d.ImageTexture(roguelikeChar);
 const roguelikeCharTextureMap = new TextureMap(roguelikeCharTexture, TextureMap.OrginalUVScalerPadding(roguelikeCharTexture, 16, 16, 1));
 roguelikeCharTextureMap.countX = 54;
 roguelikeCharTextureMap.countY = 12;
 
 const texture = roguelikeCharTextureMap.getTexture(324);
-const sprite = handler.createSprite(texture, 0, 0, 4, 4)
+const sprite = handler.createSprite(texture, 0, 0, 4, 4);
 
 let tick = 0;
 
