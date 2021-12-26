@@ -5,6 +5,8 @@ const current = {
   entry: {
     'basic':	path.join(__dirname, 'examples/basic/main.js'),
     'basic2':	path.join(__dirname, 'examples/basic2/main.js'),
+    'animation':	path.join(__dirname, 'examples/animation/main.js'),
+    'shader':	path.join(__dirname, 'examples/shader/main.js'),
   },
   resolve: {
     alias: {

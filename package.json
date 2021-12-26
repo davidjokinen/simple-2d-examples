@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
-    "start": "http-server ./examples",
+    "start": "http-server ./examples -c-1 -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

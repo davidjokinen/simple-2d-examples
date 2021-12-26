@@ -40,9 +40,11 @@ const roguelikeCharTextureMap = new TextureMap(roguelikeCharTexture, TextureMap.
 roguelikeCharTextureMap.countX = 54;
 roguelikeCharTextureMap.countY = 12;
 
+// const testHandler = handler.createChildHandler();
+
 const texture = roguelikeCharTextureMap.getTexture(324);
 const sprite = handler.createSprite(texture, 0, 0, 4, 4);
-
+const sprite2 = handler.createSprite(texture, 0, 4, 4, 4);
 let tick = 0;
 
 const gameLoop = function () {
